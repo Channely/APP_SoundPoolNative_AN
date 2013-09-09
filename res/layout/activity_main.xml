@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:background="@drawable/ic_launcher"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="停止背景音乐" 
+            android:onClick="stopBgMusic"
+            />
+         <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button1"
+            android:layout_alignParentLeft="true"
+            android:text="播放背景音乐" 
+            android:onClick="startBgMusic"
+            />
+  
+ 		<Button
+            android:id="@+id/button43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="SoundPool发射子弹3" 
+            android:onClick="playSoundPoolTeXiao3"
+            />
+ 		<Button
+            android:id="@+id/button42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/button43"
+            android:text="SoundPool发射子弹2" 
+            android:onClick="playSoundPoolTeXiao2"
+            />
+ 		        
+ 		 <Button
+            android:id="@+id/button41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/button42"
+            android:text="SoundPool发射子弹1" 
+            android:onClick="playSoundPoolTeXiao1"
+            />
+ 		 
+ 		 <Button
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button43"
+            android:layout_alignParentBottom="true"
+            android:text="MediaPlayer发射子弹3" 
+            android:onClick="playTeXiao3"
+            />
+ 		 
+ 		 <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/button42"
+            android:layout_above="@id/button23"
+            android:text="MediaPlayer发射子弹2" 
+            android:onClick="playTeXiao2"
+            />
+ 		 <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/button41"
+            android:layout_above="@id/button22"
+            android:text="MediaPlayer发射子弹1" 
+            android:onClick="playTeXiao1"
+            />
+ 		 
+    </RelativeLayout>
+
+</LinearLayout>
